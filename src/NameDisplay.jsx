@@ -8,7 +8,6 @@ const NameDisplay = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     setDisplayName(true);
   };
 
@@ -26,8 +25,6 @@ const NameDisplay = () => {
               value={firstName}
               onChange={(e) => {
                 setFirstName(e.target.value);
-                setLastName("");
-                setDisplayName(false);
               }}
               required
             />
