@@ -60,7 +60,7 @@ const NameDisplay = () => {
 
 export default NameDisplay;
 
-
+// // This code is not passing the test cases - having extra functionaties
 // import { useState } from "react";
 // const NameDisplay = () => {
 //   const [firstName, setFirstName] = useState("");
