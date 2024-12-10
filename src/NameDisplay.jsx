@@ -2,7 +2,7 @@ import { useState } from "react";
 const NameDisplay = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-//   const [fullName, setFullName] = useState("")
+//   const [fullName, setFullName] = useState("");
   const [displayName, setDisplayName] = useState(false);
   const [error, setError] = useState("");
 
