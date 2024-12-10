@@ -33,6 +33,7 @@ const NameDisplay = () => {
             First Name:{" "}
             <input
               id="first"
+              name="firstname"
               type="text"
               value={firstName}
               onChange={(e) => {
@@ -49,6 +50,7 @@ const NameDisplay = () => {
             Last Name:{" "}
             <input
               id="last"
+              name="lastname"
               type="text"
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
