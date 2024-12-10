@@ -2,7 +2,7 @@ import { useState } from "react";
 const NameDisplay = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-//   const [fullName, setFullName] = useState("");
+  const [fullName, setFullName] = useState("");
   const [displayName, setDisplayName] = useState(false);
 
 
@@ -17,7 +17,7 @@ const NameDisplay = () => {
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="first">
-            First Name:{" "}
+            First Name:
             <input
               id="first"
               name="firstname"
@@ -32,7 +32,7 @@ const NameDisplay = () => {
         </div>
         <div>
           <label htmlFor="last">
-            Last Name:{" "}
+            Last Name:
             <input
               id="last"
               name="lastname"
@@ -44,7 +44,8 @@ const NameDisplay = () => {
           </label>
         </div>
         <div>
-          <input type="submit" />
+          {/* <input type="submit" /> */}
+          <button type="submit">Submit</button>
         </div>
       </form>
 
