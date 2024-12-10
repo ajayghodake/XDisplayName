@@ -2,6 +2,7 @@ import { useState } from "react";
 const NameDisplay = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
+//   const [fullName, setFullName] = useState("")
   const [displayName, setDisplayName] = useState(false);
   const [error, setError] = useState("");
 
@@ -19,6 +20,10 @@ const NameDisplay = () => {
       );
       return;
     }
+
+    // if(firstName && lastName) {
+    //     setFullName(`${firstName} ${lastName}`);
+    // }
 
     setError("");
     setDisplayName(true);
@@ -67,7 +72,7 @@ const NameDisplay = () => {
 
       {displayName && !error ? (
         <p>
-          Full Name: {firstName} {lastName}
+          Full Name: {firstName} {lastName} {fullName}
         </p>
       ) : null}
     </>
