@@ -72,7 +72,7 @@ const NameDisplay = () => {
 
       {displayName && !error ? (
         <p>
-          Full Name: {firstName} {lastName} {fullName}
+          Full Name: {firstName} {lastName}
         </p>
       ) : null}
     </>
